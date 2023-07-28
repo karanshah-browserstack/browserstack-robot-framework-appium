@@ -3,9 +3,6 @@ Library    AppiumLibrary
 Resource   ../common/KeywordsFile.robot
 Library    String
 
-*** Variables ***
-${APP_ID}=     %{BROWSERSTACK_APP_ID}
-
 *** Test Cases ***
 Test Wiki app
     Start Local testing
@@ -18,7 +15,7 @@ Test Wiki app
 
 *** Keywords ***
 Open app
-    open application    app=${APP_ID}   remote_url=${REMOTE_URL}    device=Google Pixel 4   name=local_test   build=browserstack-robot-framework    browserstack.local=true     autoGrantPermissions=true
+    open application  remote_url=${REMOTE_URL}  name=local_test autoGrantPermissions=true
     IMPLICIT WAIT    5
 Handle popup
     click element    id=android:id/button1

@@ -14,5 +14,5 @@ Test Wiki app
 
 *** Keywords ***
 Open app
-    open application    app=${APP_ID}   remote_url=${REMOTE_URL}    device=OnePlus 9    os_version=11.0   name=parallel_test_oneplus   build=browserstack-robot-framework
+    open application  remote_url=${REMOTE_URL} name=parallel_test_oneplus
     IMPLICIT WAIT    5

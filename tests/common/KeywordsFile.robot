@@ -5,9 +5,7 @@ Library    mark-test-status.py
 Library    manage-local-testing.py
 
 *** Variables ***
-${USERNAME}=     %{BROWSERSTACK_USERNAME}
-${ACCESSKEY}=    %{BROWSERSTACK_ACCESS_KEY}
-${REMOTE_URL}=  https://${USERNAME}:${ACCESSKEY}@hub-cloud.browserstack.com/wd/hub
+${REMOTE_URL}=  https://hub.browserstack.com/wd/hub
 
 
 *** Keywords ***
